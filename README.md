@@ -32,9 +32,10 @@ This project aims to perform an analysis of ESG (Environmental, Social, Governan
 ## Steps to Run the Project
 1. Ensure Python 3.10 is installed.
 2. Install the required libraries using `pip install -r requirements.txt`.
-3. Open and run `scraping_data.ipynb` in Jupyter Notebook.
-4. The notebook scrapes data from Google Finance, Investors.com, and Finviz, performs sentiment analysis, and generates necessary CSV files.
-5. Access the generated CSV files for analysis.
+3. Open and run the Jupyter Notebooks to scrap and analys data, train a ML model. We already have a pretrained model in /data
+4. Run `app.py`, the app will be running on **http://127.0.0.1:5000**
+5.  Enter the news article, select a Ticker, press **Predict**, you will be redirected on the result webpage.
+
 
 ## Additional Notes
 - The sentiment analysis utilizes transformer-based models from the `transformers` library.
