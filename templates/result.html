@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stock Prediction Result</title>
+    <style>
+        body {
+            background-image: url("/static/MIF0056_CriteresESG.jpg"); /* Path to your image */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; /* Align elements to the middle right */
+            padding-right: 100px; /* Adjust for desired spacing */
+            color: white; /* Set text color */
+            font-family: Arial, sans-serif; /* Set font */
+        }
+        .result-text {
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
+            border-radius: 10px;
+            max-width: 500px; /* Limit text width */
+        }
+        p {
+            font-size: 18px; /* Adjust font size */
+        }
+        textarea {
+            width: 400px; /* Adjust textarea width */
+            height: 200px; /* Adjust textarea height */
+            margin-top: 20px; /* Adjust spacing */
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Prediction Result</h1>
+        <p><strong>Article:</strong> {{ article }}</p>
+        <p><strong>Ticker:</strong> {{ ticker }}</p>
+        <p><strong>Sentiment Label:</strong> {{ sentiment_label }}</p>
+        <p><strong>Sentiment Score:</strong> {{ sentiment_score }}</p>
+        <p><strong>Predicted Stock Value:</strong> {{ predicted_value }}</p>
+    </div>
+</body>
+</html>

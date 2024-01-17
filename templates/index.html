@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stock Prediction Tool</title>
+    <style>
+        body {
+            background-image: url("/static/larsimont_edd_crit_res_esg_1200.jpg"); /* Path to your image */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end; /* Align elements to the middle right */
+            padding-right: 20px; /* Adjust for desired spacing */
+            color: white; /* Set text color */
+            font-family: Arial, sans-serif; /* Set font */
+        }
+        form {
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for form */
+            padding: 20px;
+            border-radius: 10px;
+        }
+        textarea, select, input[type="submit"] {
+            width: 300px; /* Adjust width as needed */
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50; /* Green submit button color */
+            color: white;
+            cursor: pointer;
+        }
+        .esg-info-container {
+            margin-top: auto; /* Pushes the ESG info container to the bottom */
+            text-align: center;
+            color: #006400;
+        }
+        .esg-info-container a {
+            color: #142949; 
+
+        }
+    </style>
+</head>
+<body>
+    <div  class="esg-info-container">
+        <h2>Learn about our ESG Criteria</h2>
+        <p>Find out how we select companies with strong Environmental, Social, and Governance (ESG) practices.</p>
+        <a href="/esg_info">Learn More</a>
+    </div>
+    <form action="/" method="post">
+        <label for="article">Enter the news article:</label><br>
+        <textarea id="article" name="article" rows="4" cols="50"></textarea><br>
+        
+        <label for="ticker">Select Ticker:</label><br>
+        <select id="ticker" name="ticker">
+            {% for ticker in all_tickers %}
+                <option value="{{ ticker }}">{{ ticker }}</option>
+            {% endfor %}
+        </select><br>
+        
+        <input type="submit" value="Predict">
+    </form>
+
+</body>
+</html>
