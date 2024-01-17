@@ -27,7 +27,7 @@ This project aims to perform an analysis of ESG (Environmental, Social, Governan
 
 ## Requirements
 - Python 3.10
-- Libraries: `pandas`, `numpy`, `requests`, `beautifulsoup4`, `yfinance`, `transformers`, `tqdm`, `matplotlib`, `seaborn`
+- Libraries: `pandas`, `numpy`, `requests`, `beautifulsoup4`, `yfinance`, `transformers`, `tqdm`, `matplotlib`, `seaborn`, `flask`, `joblib`
 
 ## Steps to Run the Project
 1. Ensure Python 3.10 is installed.
