@@ -25,8 +25,6 @@ This project aims to perform an analysis of ESG (Environmental, Social, Governan
 - `news_esg.csv`: CSV file storing news headlines scraped from Finviz related to ESG companies.
 - `news_esg_sentiment.csv`: CSV file with sentiment analysis results of news headlines.
 
-- `README.md`: This file providing an overview and guide to the project.
-
 ## Requirements
 - Python 3.10
 - Libraries: `pandas`, `numpy`, `requests`, `beautifulsoup4`, `yfinance`, `transformers`, `tqdm`, `matplotlib`, `seaborn`
